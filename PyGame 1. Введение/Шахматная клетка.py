@@ -1,4 +1,5 @@
 import pygame
+import webbrowser
 
 pygame.init()
 
@@ -28,3 +29,4 @@ while pygame.event.wait().type != pygame.QUIT:
     pygame.display.update()
 
 pygame.quit()
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
