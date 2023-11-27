@@ -4,7 +4,7 @@ import pygame
 
 pygame.init()
 screen = pygame.display.set_mode((1920, 1080))
-pygame.display.set_caption('first')
+pygame.display.set_caption('&&&&&&&&&&')
 
 x = 960
 y = 540
