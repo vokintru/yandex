@@ -9,9 +9,10 @@ pygame.display.set_caption('&&&&&&&&&&')
 x = 960
 y = 540
 
-
+radius = random.randint(10, 50)
+speed = radius - 5
 def draw(x, y, hexadecimal):
-    pygame.draw.circle(screen, pygame.Color(hexadecimal), (x, y), 20)
+    pygame.draw.circle(screen, pygame.Color(hexadecimal), (x, y), radius)
 
 
 draw(x, y, "#ffffff")
@@ -22,8 +23,8 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    x += random.randint(-10, 10)
-    y += random.randint(-10, 10)
+    x += random.randint(-speed, speed)
+    y += random.randint(-speed, speed)
     if x <= 0:
         x = 0
     if x >= 1920:
