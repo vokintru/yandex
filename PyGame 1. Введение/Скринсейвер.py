@@ -36,6 +36,7 @@ while running:
     if y >= 1080:
         y = 1080
     pygame.draw.rect(screen, pygame.Color('#000000'), (0, 0, 0, 0))
+    #hexadecimal = ["#ff0000"]
     hexadecimal = ["#" + ''.join([random.choice('ABCDEF0123456789') for i in range(6)])]
     draw(x, y, hexadecimal[0])
     pygame.display.flip()
