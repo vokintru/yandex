@@ -35,6 +35,8 @@ class Minesweeper(Board):
 
     def open_cell(self, cell):
         x, y = cell
+        if self.board[y][x] == 10:
+            return
         s = 0
         for dy in range(-1, 2):
             for dx in range(-1, 2):
