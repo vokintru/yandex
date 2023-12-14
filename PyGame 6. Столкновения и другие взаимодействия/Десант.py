@@ -58,7 +58,6 @@ class App:
         self.all_sprites = pygame.sprite.Group()
         self.running = True
 
-
     def main(self):
         self.mountain = Mountain(self)
         while self.running:
