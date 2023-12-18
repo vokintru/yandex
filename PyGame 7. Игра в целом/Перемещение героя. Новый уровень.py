@@ -54,7 +54,7 @@ class App:
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption('Mario')
         pygame.key.set_repeat(200, 70)
-        self.fps = 600
+        self.fps = 60
         self.tile_width = self.tile_height = 50
         self.all_sprites = pygame.sprite.Group()
         self.tiles_group = pygame.sprite.Group()
@@ -142,7 +142,7 @@ class App:
 
     def run_game(self):
         run = True
-        self.generate_level(self.load_level('map1.txt'))
+        self.generate_level(self.load_level('map2.txt'))
         while run:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
