@@ -94,7 +94,6 @@ class App:
         max_width = max(map(len, level_map))
 
         # дополняем каждую строку пустыми клетками ('.')
-        print(list(map(lambda x: x.ljust(max_width, '.'), level_map)))
         return list(map(lambda x: x.ljust(max_width, '.'), level_map))
 
     def generate_level(self, level):
@@ -160,13 +159,12 @@ class App:
 
             # render
 
-            self.screen.fill(pygame.Color('blue'))
-            #self.all_sprites.draw(self.screen)
-            self.tiles_group.draw(self.screen)
-            self.player_group.draw(self.screen)
             self.camera.update(self.hero)
             for sprite in self.all_sprites:
                 self.camera.apply(sprite)
+            self.screen.fill(pygame.Color('blue'))
+            self.tiles_group.draw(self.screen)
+            self.player_group.draw(self.screen)
             pygame.display.flip()
             self.clock.tick(self.fps)
 

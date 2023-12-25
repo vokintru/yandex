@@ -123,7 +123,7 @@ class App:
 
     def run_game(self):
         run = True
-        self.generate_level(self.load_level('map1.txt'))
+        self.generate_level(self.load_level('map2.txt'))
         while run:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
