@@ -26,12 +26,6 @@ def image_mars():
            '<p>Вот она какая, красная планета</p></body>'
 
 
-@app.route("/promotion_image")
-def promotion_image():
-    return '<head><title>Колонизация</title></head><body><p color: "red">Жди нас, Марс!</p><img src="static/MARS.png" ' \
-           'alt="здесь должна была быть картинка, но не нашлась">' \
-           '<p>Вот она какая, красная планета</p></body>'
-
 
 
 if __name__ == '__main__':
