@@ -31,4 +31,4 @@ async def help_bot(ctx):
         f'"#"#inf" for infinitive state"#"#morph" for full morphological analysis')
 
 
-bot.run("MTIyNzk4NTEwMjQ3OTQyNTYyNg.GrryQX.0Q8ZLHH8RiW4t39KBQafznEeHTf4CIccrfg4vg")
+bot.run("")
