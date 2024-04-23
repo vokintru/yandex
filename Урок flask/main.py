@@ -4,19 +4,27 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def index1():
     return 'Миссия Колонизация Марса'
 
 
 @app.route('/index')
-def index1():
+def index2():
     return 'И на Марсе будут яблони цвести!'
 
 
 @app.route('/promotion_image')
-def index2():
+def promotion_image():
     with open('templates/index.html', 'r', encoding='utf-8') as stream:
         return stream.read()
+
+
+@app.route('/astronaut_selection')
+def astronaut_selection():
+    with open('templates/astronaut_selection.html', 'r', encoding='utf-8') as stream:
+        return stream.read()
+
+
 
 
 if __name__ == '__main__':
